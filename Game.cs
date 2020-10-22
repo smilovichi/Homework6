@@ -19,10 +19,12 @@ namespace Homework6
             Console.WriteLine("В случае неправильного ответа, Вы покидаете игру");
             Console.WriteLine("Чтобы начать, введите свое имя");
 
-            User user = new User();
-            user.userName = Console.ReadLine();
 
-            Console.WriteLine("Итак, " + user.userName + " мы начинаем игру!");
+       
+            User.SetUserName(Console.ReadLine());
+          
+
+            Console.WriteLine("Итак, " + User.GetUserName() + " мы начинаем игру!");
             Score score = new Score("BYN");
 
             for (int i = 0; i < questions.Length; i++)

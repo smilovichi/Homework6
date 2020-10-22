@@ -4,8 +4,18 @@ using System.Text;
 
 namespace Homework6
 {
-    class User
+      class User
     {
-      public string userName;
+
+       public static void SetUserName(string userName)
+        {
+         User.userName = userName;
+        }
+
+        public static string GetUserName()
+        {
+            return User.userName;
+        }
+
     }
 }
