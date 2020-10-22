@@ -6,6 +6,7 @@ namespace Homework6
 {
       class User
     {
+     private static string userName;
 
        public static void SetUserName(string userName)
         {
